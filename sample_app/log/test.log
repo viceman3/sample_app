@@ -330,3 +330,13 @@ Rendered layouts/_stylesheets.html.erb (2.0ms)
 Rendered layouts/_header.html.erb (2.0ms)
 Rendered layouts/_footer.html.erb (1.0ms)
 Completed 200 OK in 11ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "users" ("email", "created_at", "name", "updated_at") VALUES ('user@example.com', '2011-10-28 00:39:16.306307', 'Example User', '2011-10-28 00:39:16.306307')
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO "users" ("email", "updated_at", "name", "created_at") VALUES ('user@example.com', '2011-10-28 00:45:21.913073', 'Example User', '2011-10-28 00:45:21.913073')
