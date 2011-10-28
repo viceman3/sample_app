@@ -340,3 +340,217 @@ Completed 200 OK in 11ms (Views: 11.0ms | ActiveRecord: 0.0ms)
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
   [1m[35mAREL (0.0ms)[0m  INSERT INTO "users" ("email", "updated_at", "name", "created_at") VALUES ('user@example.com', '2011-10-28 00:45:21.913073', 'Example User', '2011-10-28 00:45:21.913073')
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Rendered pages/home.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 60ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (10.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 20ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (10.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+  Processing by PagesController#help as HTML
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+  Processing by PagesController#help as HTML
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+  Processing by UsersController#new as HTML
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (10.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 20ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+  Processing by UsersController#new as HTML
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@example.com')) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "users" ("updated_at", "name", "email", "created_at") VALUES ('2011-10-28 07:27:25.012667', 'Example User', 'user@example.com', '2011-10-28 07:27:25.012667')[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@example.com')) LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('')) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@example.com')) LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@foo.com')) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('THE_USER@foo.bar.org')) LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('first.last@foo.jp')) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@foo,com')) LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user_at_foo.org')) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example.user@foo.')) LIMIT 1
+  [1m[36mSQL (10.0ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@example.com')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO "users" ("updated_at", "name", "email", "created_at") VALUES ('2011-10-28 07:27:25.220669', 'Example User', 'user@example.com', '2011-10-28 07:27:25.220669')
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@example.com')) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('USER@EXAMPLE.COM')) LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "users" ("updated_at", "name", "email", "created_at") VALUES ('2011-10-28 07:27:25.240669', 'Example User', 'USER@EXAMPLE.COM', '2011-10-28 07:27:25.240669')[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@example.com')) LIMIT 1
+
+
+Started GET "/contact" for 127.0.0.1 at Fri Oct 28 09:27:25 +0200 2011
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (10.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at Fri Oct 28 09:27:25 +0200 2011
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (10.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/help" for 127.0.0.1 at Fri Oct 28 09:27:25 +0200 2011
+  Processing by PagesController#help as HTML
+Rendered layouts/_stylesheets.html.erb (60.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 60ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Fri Oct 28 09:27:25 +0200 2011
+  Processing by UsersController#new as HTML
+Rendered layouts/_stylesheets.html.erb (10.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Rendered pages/home.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 50ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 20ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (10.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (10.0ms)
+Completed 200 OK in 20ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+  Processing by PagesController#help as HTML
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+  Processing by PagesController#help as HTML
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+  Processing by UsersController#new as HTML
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (10.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 20ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+  Processing by UsersController#new as HTML
+Rendered layouts/_stylesheets.html.erb (10.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@example.com')) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "users" ("name", "updated_at", "created_at", "email") VALUES ('Example User', '2011-10-28 07:30:30.629074', '2011-10-28 07:30:30.629074', 'user@example.com')[0m
+  [1m[35mSQL (10.0ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@example.com')) LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('')) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@example.com')) LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@foo.com')) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('THE_USER@foo.bar.org')) LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('first.last@foo.jp')) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@foo,com')) LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user_at_foo.org')) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('example.user@foo.')) LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@example.com')) LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO "users" ("name", "updated_at", "created_at", "email") VALUES ('Example User', '2011-10-28 07:30:30.699074', '2011-10-28 07:30:30.699074', 'user@example.com')
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@example.com')) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('USER@EXAMPLE.COM')) LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "users" ("name", "updated_at", "created_at", "email") VALUES ('Example User', '2011-10-28 07:30:30.719074', '2011-10-28 07:30:30.719074', 'USER@EXAMPLE.COM')[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@example.com')) LIMIT 1
+
+
+Started GET "/" for 127.0.0.1 at Fri Oct 28 09:30:30 +0200 2011
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at Fri Oct 28 09:30:30 +0200 2011
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (10.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at Fri Oct 28 09:30:30 +0200 2011
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (10.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/help" for 127.0.0.1 at Fri Oct 28 09:30:30 +0200 2011
+  Processing by PagesController#help as HTML
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Fri Oct 28 09:30:30 +0200 2011
+  Processing by UsersController#new as HTML
+Rendered layouts/_stylesheets.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
