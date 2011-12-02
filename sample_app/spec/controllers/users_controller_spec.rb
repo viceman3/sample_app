@@ -302,3 +302,5 @@ describe UsersController do
   end
     
 end
+
+#Kommentelt sor
